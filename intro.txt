@@ -1,0 +1,76 @@
+What is CSS?
+
+CSS stands for cascading style sheets. 
+
+Using html we create the skeleton of a website, when we want to add some style in it we use
+CSS. CSS is use to give style of the website and also CSS used to make our website 
+responsive.
+
+Main point is that CSS takes the responsibility of design.
+
+History of the CSS==>
+
+CSS was created by a group of individual known as WORLD WIDE CONSORTIUM(W3C)
+Primary contributor include Hokon Wium Lie and Bret Bros.
+
+CSS standards and specification are maintained by  the W3C
+
+A community of web developer designers, and browser vendors also contribute to its
+evaluation.
+
+Regular updates and new versions ensure  CSS remains relevant and adoptable to changing
+web design needs.
+
+How to write CSS?
+
+The syntax of writting CSS is
+
+selector{property_name:value;}
+
+Now ,selector means where to add style.
+property_name meaning which style want to add and value means the which color or syle add
+
+p{color:red;}
+
+all pharagraph inside the <body> their text color will be red.
+
+How to add CSS to the markup language?
+
+There are three way to add CSS in the html element:-
+
+1.Inline CSS=>Inline means same line.When we write CSS inside the html tag with the help
+of style attribute then it's called Inline CSS.
+
+<p style="background-color:red;"></p>
+
+2.Internal CSS=>The problem with the inline css is that it's not reusable we declare seperate
+css for each element.
+
+and second is increase the loading time.
+
+For solve this problem we use Internal CSS. Internal means in that document.we write Internal
+CSS inside the head tag.
+
+Syntax of writing Internal CSS
+
+<style>
+    selector{property:value;}
+</style>
+
+3.External CSS==>
+
+Problem in Internal CSS
+
+First of all in internal css we have to write CSS for every individual document or page
+Now the problem is that internal CSS is not reusable for whole document.
+
+Second of all When webpage start loading,first load the head tag,now if put all css
+inside the head tag that will take more loading time 
+
+For these reason we use External CSS
+
+How to write External CSS?
+
+Now for external CSS we create a external CSS file with the extension .css
+
+and link it on html tag with the help of <link> tag.
