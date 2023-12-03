@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstDiv{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* Add padding for alignment inside */
+            /* padding-top:5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px; */
+            /* short-hand for padding */
+            /* padding: 5px 5px 5px 5px; */
+            padding: 10px;
+            /* add border */
+            /* border-top: 2px;
+            border-bottom: 2px;
+            border-left: 2px;
+            border-right: 2px; */
+            /* short-hand */
+            /* border-width: 4px; */
+            /* curving the border */
+            /* border-radius: 20px;
+            border-color: black;
+            border-style: solid; */
+            /* 
+                shorthand for border
+                border:border-width border-style border-color 
+            */
+            border:4px solid black;
+            /* now add marging */
+            /* margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 2px;
+            margin-right: 2px; */
+            /* short-hand for margin */
+            margin: 5px;
+            /* margin: auto;  for centering the element left and right margin
+            with equal space*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        One of the most important concept in CSS is box-model.Now what is box-model?
+
+        Actually every element in CSS we consider as a box. Now the box is 
+        surrounded by padding,border,margin.
+
+        Padding is set to outside of the element but inside of the boder.Means
+        if we want to align the element inside then we add padding
+
+        we add border to seprate the element from another element.
+
+        we add marging for maintain the gap between two element.
+
+        The total thing is called the box-model.
+
+        VVI:-
+
+        Box-sizing property=>box-sizing is the most important thing in box model
+
+        If I increase padding then it's width automatically changed,it change because
+        the actual width of any element is added to that is your margin because
+        box-sizing:content-box.
+
+        In actual width,everything will be added=>padding,margin,border,if you
+        don't want this and this width is applicable to you then you can use a
+        property box-sizing if you specify box-sizing:border-box then it will not
+        happen that will adjust your padding.
+
+        padding is from inside of the element and marging is form outside of the element. 
+     -->
+     <div id="firstDiv">
+        I am a rider.
+     </div>
+</body>
+</html>
