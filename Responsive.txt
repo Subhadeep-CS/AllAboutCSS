@@ -1,0 +1,19 @@
+<!-- 
+    What is Responsive web design?
+
+    End less new resolution and device are difficult to support seperately for a web developer.
+    Responsive design a way for a web developer to make his website adopt to all devices
+    and resolutions.Responsive design a neccessity not a luxury.
+
+    Various way to Achieve Responsiveness?
+
+    1.Setting up the viewport(Using meta tag)
+
+    2.Use max-width/max-height.
+
+    3.Using CSS media query.
+
+    4.Using units over pixels.
+
+    I will cover this all topics in this tutorial.
+ -->

@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            height: 40vh;
+            width: 80vw;
+            margin: auto;
+            border: 2px solid black;
+            /* initiaring flexbox */
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .box{
+            height: 10vh;
+            width: 10vw;
+            background-color: aqua;
+            color: black;
+            margin: 10px 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <!-- 
@@ -21,6 +41,48 @@
         a container. Flex box means flexible box
 
         Flexbox is one-dimensional layout method for layout items in rows and column.
+
+        How to initialize flexbox?
+
+        Simple answer is put display:flex
+
+        After putting display:flex in container.Our container acts as a flexbox and the
+        all item inside the flexbox called flex-items.
+
+        I can apply property for flex-container and flex-items also
+
+        Here I will discuss about the different property of flex-container
+        and flex-items.
+
+        Flex-box properties for flex-container
+
+        flex-direction property:- Define,the direction of towardsv which items are laid.
+        It can be row,row-reverse,column,column-reverse.
+
+        The default flex-direction is row.
+
+        Flex-properties for parent(container)
+
+        1.flex-wrap:-Can be wrap,no-wrap,wrap-reverse. Wrap items as need with this
+        property.By default no-wrap.
+
+        2.justify-content:-This property is used to align the flex item using main-axis.
+        main-axis means the horizontal axis.
+
+        We can put justify-content:center or space-between,space evenly,space around=>
+        to make equal space in both direction of any box.
+
+        3.align-items:-Used to align the item in cross axis.cross-axis means vertical
+        axis.
+
+        It will be center,flex-end(it will be lower end of the flex box),flex-start(by default)
+        
      -->
+     <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+     </div>
 </body>
 </html>
