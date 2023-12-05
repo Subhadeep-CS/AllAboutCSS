@@ -1,0 +1,23 @@
+What is media query?
+
+Media-query is most important thing for acheving the responsiveness of the website.
+Media Query is a way to make the website Responsive.Whenever our screen will resize's we 
+will tell that if screen width becomes this the you have to add specific CSS in page.
+
+Syntx:-
+
+@media not|only media_type and (max-width:500px){
+    #box1{
+        display:block;
+    }
+}
+
+The result of query is true if specified media type matches the type of the device the
+document is being displayed on and all expression in the media query are true,when a
+media query is true,the corresponding stylesheet or style rules applied
+
+Media_type
+
+all=>used for all media devices
+prin=> used for printers
+screen=>used for computer screen,tablets,smart-phone etc.
