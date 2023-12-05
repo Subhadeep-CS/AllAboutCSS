@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 100vw;
+        }
+        .box{
+            display: inline-block;
+            background-color: aqua;
+            color: red;
+            height: 20vh;
+            width: 20vw;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        /* #box1{
+            margin: auto;
+        } */
+        #box2{
+          position: absolute;
+          top: 120px;
+          left: 50px;
+          z-index: 5;
+        }
+         #box3{
+           position: fixed;
+           top: 170px;
+        }
+        #box{
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Position property:-We use position property for positioning the html element in
+        our webpage.
+
+        There are five type of position used in CSS
+
+        1.static(by default)
+
+        2.Absolute
+
+        3.Relative
+
+        4.Fixed
+
+        5. Sticky
+
+        1.Static:-The default position of the html element is static.top/bottom,left/right
+        /z-index has no effect.
+
+        2.Relative:- Relative means ristedar.The top/bottom,left/right work and z-index also
+        otherwise the element is in the flow of document like statc.Relative means relative
+        to it's normal position.
+
+        3.Absolute:- The element is removed from the current document flow and is relatively
+        positioned to its first non-static anchestor.top/bottom left/right etc wrok.
+
+        4.Fixed:- just lie absolute concept the element positioned relative to the browser window.
+
+        5.Sticky:- The element is positioned based on user's scroll position
+     -->
+    <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+    </div>
+</body>
+</html>

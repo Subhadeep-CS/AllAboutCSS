@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            border: 2px solid black;
+            height: 20vh;
+            width: 20vw;
+        }
+        #myDiv{
+            background-color: aqua;
+            height: 20vh;
+            width: 100vw;
+            color: black;
+            border: 2px solid black;
+            margin: 5px 0px;
+            padding: 5px;
+        }
+        .myDiv{
+            height: 20vh;
+            width: 20vw;
+            background-color: aqua;
+            color: black;
+            margin: 5px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        The CSS display property is used to determine whether an element is teated a block
+        or inline element and the layout used for its children.(flexbox/grid)
+
+        display:inline,takes only the space required by element,No line breaks before 
+        and after.Setting width and height not allowed.(marging/padding is not allowed(top/bottom))
+     -->
+     <!-- Span is inline element by default.We try to modify the hieght and width of the
+        inline element.Now you can see the height amd width is not applicable because
+        it's a inline element 
+    -->
+    <span>My span</span> 
+    <!-- display:block takes the full space available in width and leaves a newline
+    before and after of the element.We can modify the height and width and all -->
+    <div id="myDiv">
+        I am a dog.
+    </div>
+    <!-- 
+        display:inline-block it's the most usefu property we are using in CSS.
+        Similar to inline but we can set height,width,margin,padding,element
+        is sit next to each other. Eelment acts as inline as well as block. 
+     -->
+    <div class="myDiv" id="firstDiv">
+        First Div
+    </div>
+    <div class="myDiv" id="secondDiv">
+        Second Div
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainDiv{
+            height: 80vh;
+            width: 80vw;
+            margin: auto;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .division{
+            color: aqua;
+            background-color: brown;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: 800;
+            height: 20vh;
+            width: 20vw;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        #firstDiv{
+            float: left;
+        }
+        #secondDiv{
+            /* float: right; */
+            float: right;
+        }
+        #thirdDiv{
+            /* clear: both; */
+            /* clear: right; */
+            /* clear: left; */
+            clear: both;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div class="division" id="firstDiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero cumque minus velit laudantium.</p>
+        </div>
+        <div class="division" id="secondDiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero cumque minus velit laudantium.</p>
+        </div>
+        <div class="division" id="thirdDiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero cumque minus velit laudantium.</p>
+        </div>
+    </div>
+</body>
+
+</html>

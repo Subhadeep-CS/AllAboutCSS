@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .searchBar{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border-radius: 20px;
+            border: 2px solid black;
+            padding: 3px 3px;
+            width: 129px;
+        }
+        .navbar li a:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Making a navbar using float property,later we will cover navbar using flexbox property -->
+    <!-- Making a navigation bar with home,about,contact us,blog and a search bar -->
+    <!-- create a unorder list -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <div class="searchBar">
+                    <input type="text" name="search" id="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
